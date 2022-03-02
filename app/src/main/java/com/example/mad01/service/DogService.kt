@@ -9,6 +9,6 @@ import retrofit2.http.GET
 
 interface DogService{
 
-    @GET("dogs?number=1")
-    fun giveMeDog(): Call<DogFact>
+    @GET("all")
+    fun giveMeAllDog(): Call<List<DogFact>>
 }
